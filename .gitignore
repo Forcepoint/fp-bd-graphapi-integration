@@ -1,0 +1,21 @@
+
+# Node
+node_modules/
+
+# VS Code
+.vscode
+
+# Custom
+other/
+data/
+logs/
+db/
+certs/
+test/
+.commands
+.other
+.env
+docker-compose.yml
+container-files/*.tar.gz
+config/dev.yml
+package-lock.json

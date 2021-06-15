@@ -1,0 +1,15 @@
+[Unit]
+Description=This service interacts with MS Graph API to retrieve Office 365 User Data.
+
+[Service]
+Environment=
+WorkingDirectory=
+User=
+ExecStart=/bin/bash -c 'cd ${APP_HOME}; npm start;'
+Restart=on-failure
+RestartSec=60
+StartLimitBurst=3
+StartLimitInterval=360
+
+[Install]
+WantedBy=multi-user.target
